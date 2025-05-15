@@ -1,0 +1,129 @@
+{
+  "frågor": [
+    {
+      "type": "multipleChoice",
+      "fråga": "Vilka tre faser kan ett ämne ha?",
+      "alternativ": [
+        "Fast form, flytande form, gasform",
+        "Vatten, ånga, is",
+        "Syre, väte, kväve",
+        "Kall, varm, het"
+      ],
+      "korrektSvar": "Fast form, flytande form, gasform"
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Vad är det som gör att ett ämne byter fas?",
+      "svar": "Ändring av temperatur."
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Vad är värme?",
+      "svar": "Energi som överförs från ett varmare till ett kallare föremål."
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Vad händer med atomerna/molekylerna när det blir varmare?",
+      "svar": "De rör sig mer och tar större plats."
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Vad är solen?",
+      "svar": "En glödande gasklot som ger värme och ljus till jorden."
+    },
+    {
+      "type": "multipleChoice",
+      "fråga": "Vad är stjärnor?",
+      "alternativ": [
+        "Stora brinnande gasklot, liknande solen men längre bort",
+        "Små stenar som lyser",
+        "Planeter som reflekterar ljus",
+        "Månar i andra solsystem"
+      ],
+      "korrektSvar": "Stora brinnande gasklot, liknande solen men längre bort"
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Vad är planeter?",
+      "svar": "Himlakroppar som rör sig i en bana runt en stjärna (som solen)."
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Vad är månar?",
+      "svar": "Himlakroppar som rör sig i en bana runt planeter."
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Vad är en galax?",
+      "svar": "En stor samling av stjärnor, planeter, gas och stoft."
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Vad är all materia uppbyggd av?",
+      "svar": "Atomer."
+    },
+    {
+      "type": "multipleChoice",
+      "fråga": "Vad är ett grundämne?",
+      "alternativ": [
+        "Ett ämne som bara består av en sorts atomer",
+        "En blandning av flera ämnen",
+        "En kemisk förening",
+        "En vätska"
+      ],
+      "korrektSvar": "Ett ämne som bara består av en sorts atomer"
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Vad är en molekyl?",
+      "svar": "Två eller flera atomer som sitter ihop."
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Vad är en kemisk förening?",
+      "svar": "Ett ämne som består av olika sorters atomer."
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Vad är en kemisk reaktion?",
+      "svar": "När ämnen reagerar med varandra och bildar nya ämnen."
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Ge exempel på en kemisk reaktion.",
+      "svar": "När järn rostar eller när man eldar trä."
+    },
+    {
+      "type": "multipleChoice",
+      "fråga": "Vad menas med att ett ämne är brännbart?",
+      "alternativ": [
+        "Det kan reagera med syre och börja brinna",
+        "Det är varmt vid rumstemperatur",
+        "Det kan blandas med vatten",
+        "Det är ett lätt ämne"
+      ],
+      "korrektSvar": "Det kan reagera med syre och börja brinna"
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Vad är fotosyntes?",
+      "svar": "En process där växter med hjälp av solljus omvandlar koldioxid och vatten till syre och socker."
+    },
+    {
+      "type": "shortAnswer",
+      "fråga": "Varför är fotosyntesen viktig?",
+      "svar": "Den ger syre till luften och bygger upp växternas massa."
+    },
+    {
+      "type": "multipleChoice",
+      "fråga": "Vad är kolets kretslopp?",
+      "alternativ": [
+        "Hur kolet cirkulerar i naturen mellan växter, djur och atmosfär",
+        "Hur syre försvinner från luften",
+        "Hur socker bildas i kroppen",
+        "Hur atomer blandas i vatten"
+      ],
+      "korrektSvar": "Hur kolet cirkulerar i naturen mellan växter, djur och atmosfär"
+    }
+  ]
+}
