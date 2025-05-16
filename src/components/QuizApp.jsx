@@ -1,134 +1,9 @@
 import { useState } from "react";
 import "./QuizApp.css";
+import { questionsSetOne } from "./questionSets";
+import { questionsSetTwo } from "./questionSets";
+const questions = questionsSetTwo;
 
-const questions = [
-  {
-    "type": "multipleChoice",
-    "question": "Vilka tre faser kan ett ämne ha?",
-    "options": [
-      "Fast form, flytande form, gasform",
-      "Vatten, ånga, is",
-      "Syre, väte, kväve",
-      "Kall, varm, het"
-    ],
-    "correctAnswer": "Fast form, flytande form, gasform"
-  },
-  {
-    "type": "trueFalse",
-    "statement": "Ändring av temperatur gör att ett ämne byter fas.",
-    "correct": true
-  },
-  {
-    "type": "trueFalse",
-    "statement": "Värme är energi som överförs från ett varmare till ett kallare föremål.",
-    "correct": true
-  },
-  {
-    "type": "trueFalse",
-    "statement": "När det blir varmare rör sig atomerna/molekylerna mindre och tar mindre plats.",
-    "correct": false,
-    "correctStatement": "De rör sig mer och tar större plats."
-  },
-  {
-    "type": "trueFalse",
-    "statement": "Solen är en glödande gasklot som ger värme och ljus till jorden.",
-    "correct": true
-  },
-  {
-    "type": "multipleChoice",
-    "question": "Vad är stjärnor?",
-    "options": [
-      "Stora brinnande gasklot, liknande solen men längre bort",
-      "Små stenar som lyser",
-      "Planeter som reflekterar ljus",
-      "Månar i andra solsystem"
-    ],
-    "correctAnswer": "Stora brinnande gasklot, liknande solen men längre bort"
-  },
-  {
-    "type": "trueFalse",
-    "statement": "Planeter är himlakroppar som rör sig i en bana runt en stjärna (som solen).",
-    "correct": true
-  },
-  {
-    "type": "trueFalse",
-    "statement": "Månar är himlakroppar som rör sig i en bana runt planeter.",
-    "correct": true
-  },
-  {
-    "type": "trueFalse",
-    "statement": "En galax är en stor samling av stjärnor, planeter, gas och stoft.",
-    "correct": true
-  },
-  {
-    "type": "trueFalse",
-    "statement": "All materia är uppbyggd av atomer.",
-    "correct": true
-  },
-  {
-    "type": "multipleChoice",
-    "question": "Vad är ett grundämne?",
-    "options": [
-      "Ett ämne som bara består av en sorts atomer",
-      "En blandning av flera ämnen",
-      "En kemisk förening",
-      "En vätska"
-    ],
-    "correctAnswer": "Ett ämne som bara består av en sorts atomer"
-  },
-  {
-    "type": "trueFalse",
-    "statement": "En molekyl är två eller flera atomer som sitter ihop.",
-    "correct": true
-  },
-  {
-    "type": "trueFalse",
-    "statement": "En kemisk förening är ett ämne som består av olika sorters atomer.",
-    "correct": true
-  },
-  {
-    "type": "trueFalse",
-    "statement": "En kemisk reaktion är när ämnen reagerar med varandra och bildar nya ämnen.",
-    "correct": true
-  },
-  {
-    "type": "trueFalse",
-    "statement": "Exempel på en kemisk reaktion är när järn rostar eller när man eldar trä.",
-    "correct": true
-  },
-  {
-    "type": "multipleChoice",
-    "question": "Vad menas med att ett ämne är brännbart?",
-    "options": [
-      "Det kan reagera med syre och börja brinna",
-      "Det är varmt vid rumstemperatur",
-      "Det kan blandas med vatten",
-      "Det är ett lätt ämne"
-    ],
-    "correctAnswer": "Det kan reagera med syre och börja brinna"
-  },
-  {
-    "type": "trueFalse",
-    "statement": "Fotosyntes är en process där växter med hjälp av solljus omvandlar koldioxid och vatten till syre och socker.",
-    "correct": true
-  },
-  {
-    "type": "trueFalse",
-    "statement": "Fotosyntesen är viktig eftersom den ger syre till luften och bygger upp växternas massa.",
-    "correct": true
-  },
-  {
-    "type": "multipleChoice",
-    "question": "Vad är kolets kretslopp?",
-    "options": [
-      "Hur kolet cirkulerar i naturen mellan växter, djur och atmosfär",
-      "Hur syre försvinner från luften",
-      "Hur socker bildas i kroppen",
-      "Hur atomer blandas i vatten"
-    ],
-    "correctAnswer": "Hur kolet cirkulerar i naturen mellan växter, djur och atmosfär"
-  }
-]
 
 
 export default function QuizApp() {
@@ -232,7 +107,7 @@ export default function QuizApp() {
                     ) : (
                       <>
                         <p>Fel!</p>
-                        <p>Korrekt påstående: {question.correctStatement}</p>
+                        <p>Korrekt påstående: {question.correctAnswer}</p>
                       </>
                     )
                   ) : (
@@ -241,7 +116,7 @@ export default function QuizApp() {
                     ) : (
                       <>
                         <p>Fel!</p>
-                        <p>Korrekt påstående: {question.correctStatement}</p>
+                        <p>Korrekt påstående: {question.correctAnswer}</p>
                       </>
                     )
                   )}
