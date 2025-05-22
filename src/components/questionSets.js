@@ -52,6 +52,61 @@ export const questionsSetOne = [
 
 export const questionsSetTwo = [
   {
+    type: "multipleChoice",
+    question: "Vad är den främsta energikällan som får en stjärna att lysa?",
+    options: [
+      "Gravitationens tryck mot centrum",
+      "Reflektion av ljus från andra stjärnor",
+      "Kemiska reaktioner mellan väte och syre",
+      "Kärnfusion där väte omvandlas till helium"
+    ],
+    correctAnswer: "Kärnfusion där väte omvandlas till helium"
+  },
+  {
+    type: "multipleChoice",
+    question: "Vilket av följande uppfyller inte alla kriterier för att definieras som en planet?",
+    options: [
+      "En kropp som inte har rensat sin omloppsbana",
+      "En kropp som kretsar runt en stjärna",
+      "En kropp som har tillräcklig massa för att vara rund",
+      "En kropp med egen gravitation"
+    ],
+    correctAnswer: "En kropp som inte har rensat sin omloppsbana"
+  },
+  {
+    type: "multipleChoice",
+    question: "Vilket påstående beskriver korrekt solförmörkelse?",
+    options: [
+      "Solen hamnar mellan jorden och månen",
+      "Jorden kastar sin skugga på solen",
+      "Månen reflekterar solens ljus mot jorden",
+      "Månen hamnar mellan jorden och solen"
+    ],
+    correctAnswer: "Månen hamnar mellan jorden och solen"
+  },
+  {
+    type: "multipleChoice",
+    question: "Hur hänger månens faser samman med dess rörelse?",
+    options: [
+      "De orsakas av jordens skugga som faller på månen varje natt",
+      "Faserna är ett resultat av månskenets reflektion på atmosfären",
+      "De uppstår när månen ändrar sin bana varje vecka",
+      "De uppstår eftersom vi ser olika delar av dess belysta sida under dess bana runt jorden"
+    ],
+    correctAnswer: "De uppstår eftersom vi ser olika delar av dess belysta sida under dess bana runt jorden"
+  },
+  {
+    type: "multipleChoice",
+    question: "Vad är det fysikaliska ursprunget till norrsken?",
+    options: [
+      "Reflektion av solljus från snökristaller",
+      "Månsken som bryts i ozonlagret",
+      "Gravitationella störningar i jordens magnetfält",
+      "Laddade partiklar från solen kolliderar med atmosfärens gaser"
+    ],
+    correctAnswer: "Laddade partiklar från solen kolliderar med atmosfärens gaser"
+  },
+  {
     "type": "trueFalse",
     "statement": "Fotosyntesen sker i växternas rötter där solljuset fångas upp.",
     "correct": false,

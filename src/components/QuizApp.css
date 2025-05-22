@@ -55,3 +55,39 @@
 .quiz-button:hover {
   background-color: darkblue;
 }
+
+.celebrate {
+  animation: pop-in 0.8s ease-out;
+  background-color: #f0fff0;
+  border: 3px solid #4caf50;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 127, 0.6);
+}
+
+.confetti-message {
+  font-size: 1.2rem;
+  color: #2e7d32;
+  margin: 1em 0;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pop-in {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

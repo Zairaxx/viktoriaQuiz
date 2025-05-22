@@ -4,8 +4,6 @@ import { questionsSetOne } from "./questionSets";
 import { questionsSetTwo } from "./questionSets";
 const questions = questionsSetTwo;
 
-
-
 export default function QuizApp() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -14,6 +12,7 @@ export default function QuizApp() {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
 
   const question = questions[currentQuestionIndex];
+  const scorePercentage = (score / questions.length) * 100;
 
   const handleAnswer = (answer) => {
     if (showFeedback) return; // förhindra klick när feedback visas
@@ -23,7 +22,6 @@ export default function QuizApp() {
     if (question.type === "multipleChoice") {
       isCorrect = answer === question.correctAnswer;
     } else if (question.type === "trueFalse") {
-      // använd boolean-värde på korrekthet
       const normalizedAnswer = answer.toLowerCase() === "sant";
       isCorrect = normalizedAnswer === question.correct;
     }
@@ -50,9 +48,14 @@ export default function QuizApp() {
 
   if (showScore) {
     return (
-      <div className="quiz-container">
+      <div className={`quiz-container ${scorePercentage > 75 ? "celebrate" : ""}`}>
         <h1 className="quiz-title">Resultat</h1>
         <p className="quiz-score">Du fick {score} av {questions.length} rätt.</p>
+        {scorePercentage > 75 && (
+          <div className="confetti-message">
+            🎉 Fantastiskt jobbat! Du klarade över 75%! 🎉
+          </div>
+        )}
         <button
           className="quiz-button"
           onClick={() => {
